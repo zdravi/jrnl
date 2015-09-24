@@ -243,6 +243,9 @@ def run(manual_args=None):
         print(util.py2encode(journal.pprint()))
 
     # Various export modes
+    elif args.head:
+        print(util.py2encode(journal.pprint()))
+
     elif args.short:
         print(util.py2encode(journal.pprint(short=True)))
 
